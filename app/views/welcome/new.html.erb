@@ -1,0 +1,65 @@
+<h1> New Student</h1>
+
+<%= form_with model: @welcomes do |form| %>
+  <div>
+    <%= form.label :first_name %><br>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div>
+    <%= form.label :last_name %><br>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div>
+    <%= form.label :student_email %><br>
+    <%= form.email_field :student_email %>
+  </div>
+
+    <%= form.submit %>
+<% end %>
+
+<%# <%= check_box_tag "accept" %> 
+
+<%# <%= form.time_zone_select :time_zone %>
+
+<%# <%= form.file_field :picture %> 
+  <%# <%= file_field_tag :picture %>
+
+<%# <%= form.select :city, ["Berlin", "Chicago", "Madrid"] %>
+<%# <%= form.select :city,
+      {
+        "Europe" => [ ["Berlin", "BE"], ["Madrid", "MD"] ],
+        "North America" => [ ["Chicago", "CHI"] ],
+      },
+      selected: "CHI" %>
+
+<%# <%= form.check_box :pet_dog %> 
+<%# <%= form.label :pet_dog, "I own a dog" %> 
+<%# <%= form.check_box :pet_cat %> 
+<%# <%= form.label :pet_cat, "I own a cat" %> 
+
+<%# <%= form.radio_button :age, "child" %> 
+<%# <%= form.label :age_child, "I am younger than 21" %> 
+<%# <%= form.radio_button :age, "adult" %>
+<%# <%= form.label :age_adult, "I am over 21" %> 
+
+<%# <%= form.text_area :message, size: "70x5" %>
+<%# <%= form.hidden_field :parent_id, value: "foo" %>
+<%# <%= form.password_field :password %> 
+<%# <%= form.number_field :price, in: 1.0..20.0, step: 0.5 %>
+<%# <%= form.range_field :discount, in: 1..100 %>
+  
+<%# <%= form.date_select :birth_date %> 
+
+<%# <%= form.date_field :born_on %> 
+<%# <%= form.time_field :started_at %> 
+
+<%# <%= form.datetime_local_field :graduation_day %> 
+<%# <%= form.month_field :birthday_month %>
+<%# <%= form.week_field :birthday_week %> 
+<%# <%= form.search_field :name %>
+<%# <%= form.email_field :address %> 
+<%# <%= form.telephone_field :phone %> 
+<%# <%= form.url_field :homepage %> 
+<%# <%= form.color_field :favorite_color %>
